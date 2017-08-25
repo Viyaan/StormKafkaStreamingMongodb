@@ -8,7 +8,7 @@ KafkaSpoutTopology has the below components
 
 storm.kafka.KafkaSpout - > Storm API to recieve messages from Kafka and emits to WordSpitBolt
 
-HdfsBolt -->  Writes the stream into HDFS
+MongoInsertBolt -->  Writes the stream into Mongo
 
 
 
