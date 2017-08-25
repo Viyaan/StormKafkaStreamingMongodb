@@ -36,8 +36,9 @@ End with an example of getting some data out of the system or using it for a lit
 ## mongo db Properties
 
 
-mongo.url=mongodb://localhost:27017/<databasename>
-collection.name=<collection_name>
+mongo.url=mongodb://localhost:27017/<databasename>.
+
+collection.name=<collection_name>.
 
 ## Running the tests
 
