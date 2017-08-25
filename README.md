@@ -33,22 +33,11 @@ Create topic
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## HDFSProperties
+## mongo db Properties
 
 
-bolt.hdfs.field.delimiter=   Will write pipe("|")-delimited files to the HDFS.
-
-bolt.hdfs.batch.size = This size denotes After it reaches the specified tuples it will sync filesystem.
-
-bolt.hdfs.file.rotation.size.in.mb  = It will rotate files when they reach the megabytes in size.
-
-bolt.hdfs.file.rotation.time.min= It will rotate files when they reach the time.
-
-bolt.hdfs.wip.file.path= Destination path in hdfs.
-
-bolt.hdfs.finished.file.path = Destination where files are moved after rotation size or time limit is reached.
-
-bolt.hdfs.file.system.url= Hadoop File System URL.
+mongo.url=mongodb://localhost:27017/<databasename>
+collection.name=<collection_name>
 
 ## Running the tests
 
@@ -60,28 +49,13 @@ bolt.hdfs.file.system.url= Hadoop File System URL.
 
 
 	   <dependencies>
-      <dependency>
-         <groupId>org.apache.hadoop</groupId>
-         <artifactId>hadoop-client</artifactId>
-         <version>2.2.0</version>
-         <exclusions>
-            <exclusion>
-               <groupId>org.slf4j</groupId>
-               <artifactId>slf4j-log4j12</artifactId>
-            </exclusion>
-         </exclusions>
-      </dependency>
-      <dependency>
-         <groupId>org.apache.hadoop</groupId>
-         <artifactId>hadoop-hdfs</artifactId>
-         <version>2.2.0</version>
-         <exclusions>
-            <exclusion>
-               <groupId>org.slf4j</groupId>
-               <artifactId>slf4j-log4j12</artifactId>
-            </exclusion>
-         </exclusions>
-      </dependency>
+      
+<dependency>
+    <groupId>org.apache.storm</groupId>
+    <artifactId>storm-mongodb</artifactId>
+    <version>1.1.0</version>
+</dependency>
+     
       <dependency>
          <groupId>org.apache.storm</groupId>
          <artifactId>storm-core</artifactId>
