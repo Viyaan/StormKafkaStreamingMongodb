@@ -50,11 +50,11 @@ collection.name=<collection_name>
 
 	   <dependencies>
       
-<dependency>
-    <groupId>org.apache.storm</groupId>
-    <artifactId>storm-mongodb</artifactId>
-    <version>1.1.0</version>
-</dependency>
+		<dependency>
+		    <groupId>org.apache.storm</groupId>
+		    <artifactId>storm-mongodb</artifactId>
+		    <version>1.1.0</version>
+		</dependency>
      
       <dependency>
          <groupId>org.apache.storm</groupId>
