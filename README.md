@@ -95,7 +95,7 @@ collection.name=<collection_name>.
 
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Storm](http://storm.apache.org/) - Apache Storm is a free and open source distributed realtime computation system.
-* [Hadoop](http://hadoop.apache.org/) - Hadoop Distributed File System (HDFS™): A distributed file system that provides high-throughput access to application data. 
+* [Mongo](https://www.mongodb.com/) - MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need.
 
 ## Contributing
 
