@@ -18,7 +18,6 @@ import org.slf4j.LoggerFactory;
 
 import com.kafka.streaming.storm.utils.ConsumerEnum;
 import com.kafka.streaming.storm.utils.PropertiesLoader;
-import com.mongodb.WriteConcern;
 
 /**
  * @author Viyaan
@@ -41,7 +40,7 @@ public class KafkaTopology {
     
     private static MongoInsertBolt configureMongoDBBolt(PropertiesLoader loader) {
 		// TODO Auto-generated method stub
-    	MongoMapper mapper = new SimpleMongoMapper();
+    	MongoMapper mapper = new SimpleMongoMapper().withFields("str");
 		return new MongoInsertBolt(loader.getString(ConsumerEnum.MONGO_URL.getValue()),loader.getString(ConsumerEnum.COLLECTION_NAME.getValue()),mapper);
 	}
 
