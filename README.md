@@ -6,7 +6,7 @@ Application recieves live streaming data from kafka and stores in MongoDB.
 
 KafkaSpoutTopology has the below components
 
-storm.kafka.KafkaSpout - > Storm API to recieve messages from Kafka and emits to WordSpitBolt
+org.apache.storm.kafka.spout.KafkaSpout - > Storm API to recieve messages from Kafka and emits to MongoInsertBolt
 
 MongoInsertBolt -->  Writes the stream into Mongo
 
