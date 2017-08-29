@@ -74,6 +74,11 @@ collection.name=<collection_name>.
          <artifactId>storm-kafka</artifactId>
          <version>1.1.1</version>
       </dependency>
+      <dependency>
+         <groupId>org.apache.storm</groupId>
+         <artifactId>storm-kafka-client</artifactId>
+         <version>1.1.1</version>
+      </dependency>
 
       <dependency>
          <groupId>org.apache.kafka</groupId>
